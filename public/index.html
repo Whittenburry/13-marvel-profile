@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Marvel Profile</title>
-  <link rel="stylesheet" href="/app.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <title>Marvel Profile</title>
+    <link rel="stylesheet" href="/app.css">
+  </head>
+  <body>
 
-  <figure class="hero">Vision</figure>
+    <nav class="navbar-container">
+      <h2 class="navbar-container__logo">Marvel</h2>
+    </nav>
 
-  <script src="/vendor.js" charset="utf-8"></script>
-  <script src="/app.js" charset="utf-8"></script>
+    <div class="main-container">
+      <div class="main">
+        <div class="sidebar">
+          <div class="img-container">
+            <img src="http://placemarvel.com/100" alt="" class="img-container__pic">
+          </div>
+          <div class="sidebar-info">
+            <h3 class="sidebar-info__hero-name">
+              Spider-Girl
+            </h3>
+            <h5 class="sidebar-info__year">
+              2010 - 2011
+            </h5>
+            <h4 class="sidebar-info__creators">
+              Creators
+            </h4>
+            <ul class="creators">
+              <li class="creators__list-items">Tom Brennan</li>
+              <li class="creators__list-items">Mike Del Mundo</li>
+              <li class="creators__list-items">Clayton Henry</li>
+              <li class="creators__list-items">Barry Kitson</li>
+              <li class="creators__list-items">Jelena Kevic Djurdjevic</li>
+              <li class="creators__list-items">Paul Tobin</li>
+            </ul>
+          </div>
+        </div>
 
-  <script type="text/javascript">
-  </script>
-</body>
+        <div class="content-container">
+          <div class="content-characters">
+            <div class="main">
+              <h2 class="character"></h2>
+            </div>
+            <div class="character-items"></div>
+            <div class="character-items"></div>
+            <div class="character-items"></div>
+            <div class="character-items"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="/vendor.js" charset="utf-8"></script>
+    <script src="/app.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+      require(`index`)();
+    </script>
+  </body>
 </html>
