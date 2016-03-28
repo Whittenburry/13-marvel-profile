@@ -7,7 +7,7 @@
 
     border-bottom: $brand-border;
 
-    color: $brand-black;
+    color: $brand-tan;
   }
 
 }
@@ -47,6 +47,7 @@
   }
 
   &__info {
+    padding-left: $gutter;
     &__name {
       margin: 0;
       padding: $gutter / 4;
@@ -61,13 +62,13 @@
   &__button {
     align-self: flex-end;
 
-    width: 75%;
+    width: 50%;
 
     border: 0;
     border-radius: $gutter;
 
     background: $brand-black;
-    color: $brand-red;
+    color: $brand-light-grey;
 
     &:hover {
       cursor: pointer;
