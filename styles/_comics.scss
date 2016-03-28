@@ -1,0 +1,76 @@
+.comics {
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    margin-top: 0;
+
+    border-bottom: $brand-border;
+
+    color: $brand-black;
+  }
+
+}
+
+.comics-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding-left: $gutter;
+}
+
+.comics-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: calc(100% / 4 - #{$gutter});
+
+  padding: 0 $gutter $gutter * 4;
+
+  &__img {
+    &__pic {
+      width: 100%;
+
+      border-radius: $gutter;
+    }
+  }
+
+  &__issue {
+    margin: 0;
+    padding: $gutter / 4;
+
+    &-number {
+      margin: 0;
+    }
+  }
+
+  &__info {
+    &__name {
+      margin: 0;
+      padding: $gutter / 4;
+    }
+
+    &__year {
+      margin: 0;
+      padding: $gutter / 4;
+    }
+  }
+
+  &__button {
+    align-self: flex-end;
+
+    width: 75%;
+
+    border: 0;
+    border-radius: $gutter;
+
+    background: $brand-black;
+    color: $brand-red;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

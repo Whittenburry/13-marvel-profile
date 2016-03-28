@@ -7,7 +7,7 @@ export default class SidebarView {
 
     this.element.querySelector(`.sidebar-info__hero-name`).innerText = data.title;
 
-    this.element.querySelector(`.sidebar-info__year`).innerText = data.endYear;
+    this.element.querySelector(`.sidebar-info__year`).innerText = `${data.startYear} - ${data.endYear}`;
   }
 
   // creatorList() {

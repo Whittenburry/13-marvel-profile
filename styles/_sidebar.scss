@@ -1,5 +1,5 @@
 .sidebar {
-  width: calc(100% / 3 - #{$gutter} * 2);
+  width: 30%;
 }
 
 .img-container {
@@ -30,11 +30,11 @@
 
   &__creators {
     margin: 0;
-    padding: $gutter 0;
+    padding: $gutter 0 0;
 
     color: $brand-black;
 
-    border-bottom: 0.2rem solid $brand-black;
+    border-bottom: $brand-border;
   }
 }
 
