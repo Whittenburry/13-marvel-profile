@@ -1,5 +1,7 @@
 'use strict';
+
 import SidebarView from 'series-info-view';
+
 export default function () {
   const id = 9790;
 

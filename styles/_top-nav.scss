@@ -1,0 +1,14 @@
+.navbar-container {
+  width: 100%;
+
+  background: $brand-black;
+}
+
+.navbar-container__logo {
+  width: $max-content-width;
+
+  margin: auto;
+  padding: $gutter * 3 0;
+
+  color: $brand-red;
+}

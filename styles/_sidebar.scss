@@ -1,0 +1,47 @@
+.sidebar {
+  width: calc(100% / 3 - #{$gutter} * 2);
+}
+
+.img-container {
+  &__pic {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+}
+
+.sidebar-info {
+
+  margin: 0;
+  padding: $gutter 0;
+
+  &__hero-name {
+    margin: 0;
+    padding: $gutter 0;
+
+    color: $brand-black;
+  }
+
+  &__year {
+    margin: 0;
+    padding: $gutter 0;
+
+    color: $brand-black;
+  }
+
+  &__creators {
+    margin: 0;
+    padding: $gutter 0;
+
+    color: $brand-black;
+
+    border-bottom: 0.2rem solid $brand-black;
+  }
+}
+
+.creators {
+  padding: 0;
+
+  &__list-items {
+    padding: $gutter / 2 0;
+  }
+}
