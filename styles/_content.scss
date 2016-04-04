@@ -34,12 +34,27 @@
   // width: calc(100% / 4 - #{$gutter} * 8);
 
   &__img {
-    // width: calc(100% / 4 - #{$gutter});
+    position: relative;
+    width: 100%;
+
+    border-radius: $gutter;
+
+    overflow: hidden;
+
+    &:before {
+      display: block;
+      padding-top: 100%;
+      content: '';
+    }
 
     &__pic {
-      width: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
 
-      border-radius: $gutter;
+      width: 100%;
     }
   }
 

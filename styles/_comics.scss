@@ -30,10 +30,27 @@
   padding: 0 $gutter $gutter * 4;
 
   &__img {
-    &__pic {
-      width: 100%;
+    position: relative;
+    width: 100%;
 
-      border-radius: $gutter;
+    border-radius: $gutter;
+
+    overflow: hidden;
+
+    &:before {
+      display: block;
+      padding-top: 100%;
+      content: '';
+    }
+
+    &__pic {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
     }
   }
 
@@ -48,6 +65,7 @@
 
   &__info {
     padding-left: $gutter;
+
     &__name {
       margin: 0;
       padding: $gutter / 4;
@@ -66,6 +84,8 @@
 
     border: 0;
     border-radius: $gutter;
+
+    outline: 0;
 
     background: $brand-black;
     color: $brand-light-grey;
