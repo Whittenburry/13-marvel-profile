@@ -60,11 +60,12 @@
 
     &-number {
       margin: 0;
+      padding: $gutter $gutter 0;
     }
   }
 
   &__info {
-    padding-left: $gutter;
+    padding: $gutter $gutter 0;
 
     &__name {
       margin: 0;
@@ -78,9 +79,11 @@
   }
 
   &__button {
-    align-self: flex-end;
+    align-self: center;
 
-    width: 50%;
+    width: 100%;
+    margin-top: $gutter;
+    padding: $gutter;
 
     border: 0;
     border-radius: $gutter;
@@ -91,6 +94,7 @@
     color: $brand-light-grey;
 
     &:hover {
+      color: $brand-red;
       cursor: pointer;
     }
   }

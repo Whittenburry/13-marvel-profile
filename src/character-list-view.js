@@ -7,8 +7,8 @@ export default class CharacterListView {
     this.data = data;
 
     this.data.forEach((character) => {
-      const cView = new CharacterView(character);
-      this.element.appendChild(cView.element);
+      const charView = new CharacterView(character);
+      this.element.appendChild(charView.element);
     });
   }
 }
