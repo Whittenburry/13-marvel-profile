@@ -56,25 +56,25 @@
 
   &__issue {
     margin: 0;
-    padding: $gutter / 4;
+    padding-left: $gutter;
 
     &-number {
       margin: 0;
-      padding: $gutter $gutter 0;
+      padding: $gutter 0 0 $gutter;
     }
   }
 
   &__info {
-    padding: $gutter $gutter 0;
+    padding: 0 $gutter;
 
     &__name {
       margin: 0;
-      padding: $gutter / 4;
+      padding: 0 0 $gutter $gutter;
     }
 
     &__year {
       margin: 0;
-      padding: $gutter / 4;
+      padding: $gutter;
     }
   }
 
