@@ -17,8 +17,25 @@ export default class ComicView {
       <div class="comics-item__info">
         <h4 class="comics-item__info__name">${comicItem.title}</h4>
       </div>
-      <button class="comics-item__button">Read More</button>`;
+      <button class="comics-item__button">Read More</button>
+      <div class="modal">
+        <div class="modal-card">
+          <i class="fa fa-times modal-escape"></i>
+          <p class="modal-title">${this.comicItem.title}</p>
+          <p class="modal-description">${this.comicItem.description}</p>
+        </div>
+      </div>`;
 
+    const modal = this.element.querySelector(`.modal`);
+    const modalActive = this.element.querySelector(`.modal-active`);
+
+    this.element.querySelector(`.comics-item__button`).addEventListener(`click`, () => {
+      modal.classList.add(`modal-active`);
+    });
+
+    this.element.querySelector(`.modal-escape`).addEventListener(`click`, () => {
+      modal.classList.remove(`modal-active`);
+    });
   }
 
 // Tried to get the modal to work. Gonna have to come back to it.

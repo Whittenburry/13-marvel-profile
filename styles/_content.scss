@@ -24,7 +24,6 @@
 .characters-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 
   width: calc(100% / 4 - #{$gutter});
 

@@ -1,25 +1,30 @@
 .modal {
-  display: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 80vw;
-
-  padding: $gutter;
-
-  transform: translate(-50%, -50%);
-
-  background: $brand-grey;
-}
-
-.modal-card {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
 
   width: 100vw;
   height: 100vh;
+
+  background: $modal-overlay;
+
+  z-index: 1;
+
+  &-active {
+    display: flex;
+  }
+}
+
+.modal-card {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 60rem;
+  margin: auto;
+
+  border-radius: 0.5rem;
 
   background: $brand-black;
   color: $brand-light-grey;
@@ -28,11 +33,28 @@
 }
 
 .modal-escape {
+  align-self: flex-end;
+
+  padding: $gutter;
+
   color: $brand-red;
 
+  font-size: 1.5rem;
   cursor: pointer;
+
+  &-active {
+    display: none;
+  }
 }
 
 .modal-title {
+  padding: $gutter;
+
+  color: $brand-tan;
+}
+
+.modal-description {
+  padding: $gutter;
+
   color: $brand-tan;
 }
