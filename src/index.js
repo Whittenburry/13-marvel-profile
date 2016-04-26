@@ -7,7 +7,7 @@ import ComicView from 'comic-view';
 import ComicListView from 'comic-list-view';
 
 export default function () {
-  const id = 354;
+  const id = 581;
 
   fetch(`http://gateway.marvel.com:80/v1/public/series/${id}?apikey=5c152b717c03cf5b31580de2bddc49fa`)
     .then((response) => response.json())
