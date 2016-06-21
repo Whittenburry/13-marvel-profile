@@ -8,9 +8,9 @@ export default class CharacterView {
 
     this.element.innerHTML = `
     <div class="characters-item__img">
-      <img src="${charItem.thumbnail.path}.${charItem.thumbnail.extension}" alt="" class="characters-item__img__pic">
+      <img src="${charItem.thumbnail.path}.${charItem.thumbnail.extension}"
+      alt="" class="characters-item__img__pic">
     </div>
     <h3 class="characters-item__info">${charItem.name}</h3>`;
-
   }
 }
