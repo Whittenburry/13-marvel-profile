@@ -1,16 +1,196 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>13 Marvel Profile</title>
-  <link rel="stylesheet" href="/app.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <title>Marvel Profile</title>
+    <link href='https://fonts.googleapis.com/css?family=Marvel' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/app.css">
+  </head>
+  <body>
 
-  <script src="/vendor.js" charset="utf-8"></script>
-  <script src="/app.js" charset="utf-8"></script>
+    <div class="outer-container">
+      <nav class="navbar-container">
+        <h1 class="navbar-container__logo">Marvel</h1>
+      </nav>
 
-  <script type="text/javascript">
-  </script>
-</body>
+      <div class="main-container">
+        <div class="main">
+
+          <div class="sidebar">
+            <div class="img-container">
+              <img src="" alt="" class="img-container__pic">
+            </div>
+            <div class="sidebar-info">
+              <h2 class="sidebar-info__hero-name"></h2>
+              <h3 class="sidebar-info__year"></h3>
+              <h2 class="sidebar-info__creators"></h2>
+              <ul class="creators"></ul>
+            </div>
+          </div>
+
+          <div class="content-container">
+            <div class="characters">
+              <h2 class="characters__heading">Characters</h2>
+              <ul class="characters-container">
+                <!-- <li class="characters-item">
+                  <div class="characters-item__img">
+                    <img src="https://www.sideshowtoy.com/assets/products/902224-iron-man-mark-iii/lg/902224-iron-man-mark-iii-001.jpg" alt="" class="characters-item__img__pic">
+                  </div>
+                  <h3 class="characters-item__info">Ironman</h3>
+                </li>
+                <div class="characters-item">
+                  <div class="characters-item__img">
+                    <img src="https://www.sideshowtoy.com/assets/products/902224-iron-man-mark-iii/lg/902224-iron-man-mark-iii-001.jpg" alt="" class="characters-item__img__pic">
+                  </div>
+                  <h3 class="characters-item__info">Ironman</h3>
+                </div>
+                <div class="characters-item">
+                  <div class="characters-item__img">
+                    <img src="https://www.sideshowtoy.com/assets/products/902224-iron-man-mark-iii/lg/902224-iron-man-mark-iii-001.jpg" alt="" class="characters-item__img__pic">
+                  </div>
+                  <h3 class="characters-item__info">Ironman</h3>
+                </div>
+                <div class="characters-item">
+                  <div class="characters-item__img">
+                    <img src="https://www.sideshowtoy.com/assets/products/902224-iron-man-mark-iii/lg/902224-iron-man-mark-iii-001.jpg" alt="" class="characters-item__img__pic">
+                  </div>
+                  <h3 class="characters-item__info">Ironman</h3>
+                </div> -->
+              </ul>
+            </div>
+            <div class="comics">
+              <h2 class="comics__heading">Comics</h2>
+              <ul class="comics-container">
+                <!-- <li class="comics-item">
+                  <div class="comics-item__img">
+                    <img class="comics-item__img__pic" src="https://www.sideshowtoy.com/assets/products/902224-iron-man-mark-iii/lg/902224-iron-man-mark-iii-008.jpg" alt="" />
+                  </div>
+                  <div class="comics-item__issue">
+                    <h4 class="comics-item__issue-number"># 7</h4>
+                  </div>
+                  <div class="comics-item__info">
+                    <h4 class="comics-item__info__name">Iron Man</h4>
+                    <h4 class="comics-item__info__year">2016</h4>
+                  </div>
+                  <button class="comics-item__button">Read More</button>
+                  <div class="modal">
+                    <modal class="modal-card">
+                      <i class="fa fa-times modal-escape"></i>
+                    </modal>
+                  </div>
+                </li> -->
+                <!-- <div class="comics-item">
+                  <div class="comics-item__img">
+                    <img class="comics-item__img__pic" src="https://www.sideshowtoy.com/assets/products/902224-iron-man-mark-iii/lg/902224-iron-man-mark-iii-008.jpg" alt="" />
+                  </div>
+                  <div class="comics-item__issue">
+                    <h4 class="comics-item__issue-number"># 7</h4>
+                  </div>
+                  <div class="comics-item__info">
+                    <h4 class="comics-item__info__name">Iron Man</h4>
+                    <h4 class="comics-item__info__year">2016</h4>
+                  </div>
+                  <button class="comics-item__button">Read More</button>
+                </div>
+                <div class="comics-item">
+                  <div class="comics-item__img">
+                    <img class="comics-item__img__pic" src="https://www.sideshowtoy.com/assets/products/902224-iron-man-mark-iii/lg/902224-iron-man-mark-iii-008.jpg" alt="" />
+                  </div>
+                  <div class="comics-item__issue">
+                    <h4 class="comics-item__issue-number"># 7</h4>
+                  </div>
+                  <div class="comics-item__info">
+                    <h4 class="comics-item__info__name">Iron Man</h4>
+                    <h4 class="comics-item__info__year">2016</h4>
+                  </div>
+                  <button class="comics-item__button">Read More</button>
+                </div>
+                <div class="comics-item">
+                  <div class="comics-item__img">
+                    <img class="comics-item__img__pic" src="https://www.sideshowtoy.com/assets/products/902224-iron-man-mark-iii/lg/902224-iron-man-mark-iii-008.jpg" alt="" />
+                  </div>
+                  <div class="comics-item__issue">
+                    <h4 class="comics-item__issue-number"># 7</h4>
+                  </div>
+                  <div class="comics-item__info">
+                    <h4 class="comics-item__info__name">Iron Man</h4>
+                    <h4 class="comics-item__info__year">2016</h4>
+                  </div>
+                  <button class="comics-item__button">Read More</button>
+                </div>
+                <div class="comics-item">
+                  <div class="comics-item__img">
+                    <img class="comics-item__img__pic" src="https://www.sideshowtoy.com/assets/products/902224-iron-man-mark-iii/lg/902224-iron-man-mark-iii-008.jpg" alt="" />
+                  </div>
+                  <div class="comics-item__issue">
+                    <h4 class="comics-item__issue-number"># 7</h4>
+                  </div>
+                  <div class="comics-item__info">
+                    <h4 class="comics-item__info__name">Iron Man</h4>
+                    <h4 class="comics-item__info__year">2016</h4>
+                  </div>
+                  <button class="comics-item__button">Read More</button>
+                </div>
+                <div class="comics-item">
+                  <div class="comics-item__img">
+                    <img class="comics-item__img__pic" src="https://www.sideshowtoy.com/assets/products/902224-iron-man-mark-iii/lg/902224-iron-man-mark-iii-008.jpg" alt="" />
+                  </div>
+                  <div class="comics-item__issue">
+                    <h4 class="comics-item__issue-number"># 7</h4>
+                  </div>
+                  <div class="comics-item__info">
+                    <h4 class="comics-item__info__name">Iron Man</h4>
+                    <h4 class="comics-item__info__year">2016</h4>
+                  </div>
+                  <button class="comics-item__button">Read More</button>
+                </div>
+                <div class="comics-item">
+                  <div class="comics-item__img">
+                    <img class="comics-item__img__pic" src="https://www.sideshowtoy.com/assets/products/902224-iron-man-mark-iii/lg/902224-iron-man-mark-iii-008.jpg" alt="" />
+                  </div>
+                  <div class="comics-item__issue">
+                    <h4 class="comics-item__issue-number"># 7</h4>
+                  </div>
+                  <div class="comics-item__info">
+                    <h4 class="comics-item__info__name">Iron Man</h4>
+                    <h4 class="comics-item__info__year">2016</h4>
+                  </div>
+                  <button class="comics-item__button">Read More</button>
+                </div>
+                <div class="comics-item">
+                  <div class="comics-item__img">
+                    <img class="comics-item__img__pic" src="https://www.sideshowtoy.com/assets/products/902224-iron-man-mark-iii/lg/902224-iron-man-mark-iii-008.jpg" alt="" />
+                  </div>
+                  <div class="comics-item__issue">
+                    <h4 class="comics-item__issue-number"># 7</h4>
+                  </div>
+                  <div class="comics-item__info">
+                    <h4 class="comics-item__info__name">Iron Man</h4>
+                    <h4 class="comics-item__info__year">2016</h4>
+                  </div>
+                  <button class="comics-item__button">Read More</button>
+                </div> -->
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    <div class="footer-container">
+      <footer class="footer">
+        <a href="http://marvel.com/" target="_blank" class="marvel-copyright">Data provided by Marvel. © 2016 MARVEL</a>
+      </footer>
+    </div>
+
+    </div>
+
+    <script src="/vendor.js" charset="utf-8"></script>
+    <script src="/app.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+      require(`index`)();
+    </script>
+  </body>
 </html>

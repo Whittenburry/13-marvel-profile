@@ -1,0 +1,64 @@
+.characters {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: $gutter * 2;
+
+  &__heading {
+    margin-top: 0;
+
+    border-bottom: $brand-border;
+
+    color: $brand-tan;
+  }
+}
+
+.characters-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding-left: $gutter;
+}
+
+.characters-item {
+  display: flex;
+  flex-direction: column;
+
+  width: calc(100% / 4 - #{$gutter});
+
+  padding: 0 $gutter * 2;
+
+
+  // width: calc(100% / 4 - #{$gutter} * 8);
+
+  &__img {
+    position: relative;
+    width: 100%;
+
+    border-radius: $gutter;
+
+    overflow: hidden;
+
+    &:before {
+      display: block;
+      padding-top: 100%;
+      content: '';
+    }
+
+    &__pic {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+    }
+  }
+
+  &__info {
+    margin: 0;
+    padding: $gutter;
+  }
+}

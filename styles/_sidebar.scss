@@ -1,0 +1,65 @@
+.sidebar {
+  width: 30%;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+
+  border-radius: $gutter;
+
+  overflow: hidden;
+
+  &:before {
+    display: block;
+    padding-top: 100%;
+    content: '';
+  }
+
+  &__pic {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+  }
+}
+
+.sidebar-info {
+
+  margin: 0;
+  padding: $gutter 0;
+
+  &__hero-name {
+    margin: 0;
+    padding: $gutter 0;
+
+    color: $brand-tan;
+  }
+
+  &__year {
+    margin: 0;
+    padding: $gutter 0;
+
+    color: $brand-light-grey;
+  }
+
+  &__creators {
+    margin: 0;
+    padding: $gutter 0 0;
+
+    color: $brand-tan;
+
+    border-bottom: $brand-border;
+  }
+}
+
+.creators {
+  padding: 0;
+
+  &__list-items {
+    padding: $gutter / 2 0;
+  }
+}
